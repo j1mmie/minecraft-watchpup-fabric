@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "watchpup-fabric",
+	"version": "0.0.1",
+	"name": "Watchpup-Fabric",
+	"description": "A Fabric mod that provides current player count information over HTTP.",
+	"authors": [
+		"Jimmie Tyrrell"
+	],
+	"contact": {
+		"homepage": "https://jimmie.cloud",
+		"sources": "https://github.com/j1mmie/minecraft-watchdog-fabric"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/watchpup-fabric/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"cloud.jimmie.minecraft.fabric.watchpup.Mod"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
