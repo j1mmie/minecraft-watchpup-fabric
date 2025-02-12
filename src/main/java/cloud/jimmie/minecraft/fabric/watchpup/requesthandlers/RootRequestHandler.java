@@ -40,8 +40,6 @@ public class RootRequestHandler implements HttpHandler {
   public void handle(HttpExchange exchange) throws IOException {
     var response = this.getResponse();
 
-    this.logger.info("Responding with %s".formatted(response));
-
     exchange.sendResponseHeaders(200, response.length());
 
     try (var os = exchange.getResponseBody()) {
